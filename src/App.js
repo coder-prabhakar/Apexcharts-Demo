@@ -1,9 +1,10 @@
-
+import Header from './component/Header/Header'
 
 function App() {
   return (
     <div className="App">
-      <h1>ApexCharts</h1>
+      <Header />
+      <div></div>
     </div>
   );
 }

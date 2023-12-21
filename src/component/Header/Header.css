@@ -17,7 +17,7 @@
     cursor: pointer;
 }
 
-.Header .Logo p span{ color: rgb(0, 153, 255); }
+.Header .Logo p span{ color: #0099ff; }
 
 .Header .Navbar{
     display: flex;
@@ -26,14 +26,7 @@
     padding-left: 15px;
 }
 
-.Header .Navbar p{
-    font-size: 17px;
-    font-weight: 500;
-    color: rgba(0, 0, 78, 0.808);
-    margin: 0;
-    line-height: 40px;
-    padding-left: 10px;
-}
+.Header .Navbar p{ margin: 0; }
 
 .Header .Navbar p:hover{
     border-right: 5px solid rgb(0, 38, 255);
@@ -45,4 +38,13 @@
     border-right: 5px solid rgb(0, 38, 255);
     cursor: pointer;
     background-color: #0099ff28;
+}
+
+.Header .Navbar p .link{
+    display: block;
+    text-decoration: none;
+    color: rgba(0, 0, 78, 0.808);
+    padding: 10px 0 10px 10px;
+    font-size: 17px;
+    font-weight: 500;
 }

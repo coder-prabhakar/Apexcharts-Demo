@@ -1,0 +1,31 @@
+.textCopySec{
+    border: 1px solid #0099ff1e;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.copyText{
+    padding-left: 10px;
+    line-height: 40px;
+    color: rgba(0, 0, 0, 0.664);
+    background-color: #0099ff09;
+}
+
+.copyTextBtn{
+    background-color: #0099ff1e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyTextBtn:hover i{
+    color: #016db6;
+}
+
+.textCopySec i {
+    font-size: 25px;
+    color: #003d66;
+}

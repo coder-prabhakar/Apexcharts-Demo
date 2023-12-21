@@ -14,3 +14,53 @@ body {
   grid-template-columns: 250px 1fr;
 }
 
+.container{
+  padding: 0 40px 40px 40px;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.container section{
+  margin-top: 50px;
+}
+
+.container h1, .container h2{
+  font-weight: 500;
+  color: #00006b;
+  margin-bottom: 15px;
+}
+
+.container h1{ font-size: 30px; }
+
+.container h3{
+  font-size: 25px;
+  font-weight: 500;
+  color:#00006bcb;
+}
+
+.container p{
+  font-weight: 600;
+  color: #000000c2;
+  line-height: 30px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+ul li span:first-child {
+  font-size: 20px;
+  color: #00006b;
+}
+
+ul li span:last-child{
+  color: #00006b9f;
+  font-weight: 600;
+}

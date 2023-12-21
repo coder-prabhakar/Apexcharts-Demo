@@ -1,8 +1,18 @@
 import "./Header.css"
+import { Link } from "react-router-dom";
 
 export default function Header(){
 
-    const navbarText = ["Docs","Line Chart","Area Chart","Column Chart","Candlestick","Pie / Donut","Synchronized charts","Polar Area Charts"]
+    const navbarText = [
+        { path:"docs", name:"Docs" },
+        { path:"lineChart", name:"Line Chart" },
+        { path:"areaChart", name:"Area Chart" },
+        { path:"columnChart", name:"Column Chart" },
+        { path:"candlestick", name:"Candlestick" },
+        { path:"donut", name:"Pie / Donut" },
+        { path:"synchronizedChart", name:"Synchronized Chart" },
+        { path:"polarAreaChart", name:"Polar Area Chart" }
+    ];
 
     function navbarActive(index){
         const navbarList = document.querySelectorAll(".Navbar > p")
@@ -19,8 +29,8 @@ export default function Header(){
             </div>
             <div className="Navbar">
                 {
-                    navbarText.map((value,index)=>(
-                        <p onClick={()=>{ navbarActive(index) }}>{value}</p>
+                    navbarText.map((Item,index)=>(
+                        <p onClick={()=>{ navbarActive(index) }}><Link className="link" to={`/${Item.path}`}>{Item.name}</Link></p>
                     ))
                 }
             </div>

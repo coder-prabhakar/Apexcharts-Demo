@@ -20,7 +20,7 @@ function LineChart() {
       type: 'line',
       zoom: {
         enabled: false
-      }
+      },
     },
     stroke: {
       curve: 'smooth'
@@ -43,11 +43,11 @@ function LineChart() {
         horizontal: 15,
         vertical: 10
       },
-    }
+    },
   }
 
   return (
-    <div className="LineChart">
+    <div className="LineChart container">
         <ReactApexChart options={options} series={series} width="100%" height="100%"/>
     </div>
   );

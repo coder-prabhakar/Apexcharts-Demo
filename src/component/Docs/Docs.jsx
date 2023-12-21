@@ -1,6 +1,10 @@
 import './Docs.css'
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import SeriesImage from '../../image/series.png';
+import OptionsImage from '../../image/options.png';
+import ChartImage from '../../image/options-chart.png';
+import ZoomImage from '../../image/options-zoom.png';
+import StrokeSyntax from '../../image/stroke-syntax.png';
 
 function Docs() {
   return (
@@ -49,7 +53,25 @@ function Docs() {
             <p>Series को array के form मे लिखा जाता है | जितना डाटा का graph print करवाना हो उतना series के array के अंदर object के form मे डाटा डाला लिखा जाता है |</p>
         </section>
         {/***** options *****/}
-        
+        <section>
+            <h3>Options</h3>
+            <img src={OptionsImage} alt="optionsImage" />
+            <p>Options को object के form मे लिखा जाता है | इसके अंदर key: value के form मे बहुत सारे graph के अलग - अलग property होते है |</p>
+        </section>
+        <div style={{marginLeft:"100px"}}>
+            {/* chart */}
+            <section>
+                <h3>Chart</h3>
+                <img src={ChartImage} alt="chartImage" />
+                <p>इसके अंदर type मे chart का प्रकार लिखा जाता है |<br />zoom मे true/false के द्वारा बताया जाता है की graph मे जो zoom के function के लिए जितना भी icon आता है वो दिखेगा की नहीं |</p>
+                <img src={ZoomImage} alt="zoomImage" />
+            </section>
+            {/* stroke */}
+            <section>
+            <h3>Stroke</h3>
+            <img src={StrokeSyntax} alt="strokeSyntax" />
+            </section>
+        </div>
     </div>
   )
 }
